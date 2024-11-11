@@ -56,10 +56,14 @@ $("html").on("keypress", function(yourKey) {
     
     if (level < 1) {
         nextSequence();
-        
-    } 
+        } 
+    })
 
-})
+$("#level-title").on("click", function(yourKey) {
+    if (level < 1) {
+        nextSequence();
+        } 
+    })
 
 function checkAnswer(currentLevel) {
     if (userClickedPattern[currentLevel] === gamePattern[currentLevel]) {
